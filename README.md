@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://imadbengreine.github.io/time-tracking-dashboard-main/)
+- Live Site URL: [live site URL here](https://imadbengreine.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
