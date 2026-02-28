@@ -50,9 +50,7 @@ Users should be able to:
 ### AI Collaboration
 
 I used AI assistance (ChatGPT/Claude) during this project for:
-- Debugging JavaScript fetch and DOM manipulation issues
 - Structuring CSS Grid layouts
-- Refactoring code for better readability
 
 The AI was particularly helpful for quickly identifying scope issues in my JavaScript and suggesting semantic HTML structures.
 
