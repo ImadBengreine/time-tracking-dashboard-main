@@ -116,6 +116,85 @@ body {
   gap: 1.5rem;
 }
 
+
+.activity-card {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Colored top section */
+.activity-header {
+  background-color: var(--color-work); /* change per category */
+  position: relative;
+}
+
+/* Icon positioning */
+.activity-header::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 1rem;
+  width: 80px;
+  height: 80px;
+  background: url('./images/icon-work.svg') no-repeat;
+  opacity: 0.2;
+}
+
+/* Dark content card - overlaps the header */
+.activity-content {
+  background-color: var(--color-bg-card);
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.2rem;
+  margin-top: -20px; /* pulls it up over the header */
+  position: relative;
+  z-index: 1;
+}
+
+.activity-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.activity-title-row h3 {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.activity-hours h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 0 0 0.5rem 0;
+}
+
+.activity-hours p {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.activity-card.work .activity-header { background-color: var(--color-work); }
+.activity-card.play .activity-header { background-color: var(--color-play); }
+.activity-card.study .activity-header { background-color: var(--color-study); }
+.activity-card.exercise .activity-header { background-color: var(--color-exercise); }
+.activity-card.social .activity-header { background-color: var(--color-social); }
+.activity-card.self-care .activity-header { background-color: var(--color-self-care); }
+
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
