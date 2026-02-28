@@ -38,6 +38,20 @@ function renderCard(activities) {
   container.innerHTML = html;
 }
 
+document.querySelector('.time-filter').addEventListener('click', (e) => {
+  if (!e.target.classList.contains('filter-option')) return;
+  
+  document.querySelectorAll('.filter-option').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  
+  e.target.classList.add('active');
+  option = e.target.textContent.toLowerCase();
+  loadData();
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   loadData();
 });
