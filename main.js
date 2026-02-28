@@ -23,8 +23,8 @@ function renderCard (activites) {
 		let current = activity.timeframes[option].current;
 		let previous = activity.timeframes[option].previous;
 		return `<div class="activity">
-	        <p>${activity.title}</p>
-	        <h2>${current}</h2>
+	        <h3>${activity.title}</p>
+	        <h1>${current}hrs</h2>
 	        <p>${previous}</p>
 	      </div>`;
   	}).join("");
