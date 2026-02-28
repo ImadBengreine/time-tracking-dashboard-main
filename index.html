@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main class="grid-container">
+    <div class="profile-card">
+
+      <div class="user-profile">
+        <img class="user-avatar" src="./images/image-jeremy.png" alt="Jeremy Robson" />
+        <span class="report-label">Report for</span>
+        <h1 class="user-name">Jeremy Robson</h1>
+      </div>
+      <nav class="time-filter">
+        <button class="filter-option">Daily</button>
+        <button class="filter-option active">Weekly</button>
+        <button class="filter-option">Monthly</button>
+      </nav>
+    </div>
+    <div class="activity-grid" id="app">
+      <p>Loading...</p>
+      
+    </div>
+  </main>
+  <script src="./main.js" defer></script>
+</body>
+</html>
